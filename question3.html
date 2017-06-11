@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	<title>Question 3</title>
+</head>
+<html>
+<body onload="setInterval('anu()', 3000)" style="background: url(http://52.38.71.122/upfiles/Screenshot_from_2017-06-06_13-08-52.png)">
+    <p class="imageNames" style="font-size: 200px; color: #ff0099; text-align: center;">anu</p>
+    <p class="imageNames" style="font-size: 200px; color: white; text-align: center;">aishu</p>
+    <p class="imageNames" style="font-size: 200px; color: orange; text-align: center;">yashu</p>
+    <script>
+        var currentImage = 0;
+        function anu() {
+            var i;
+            var x = document.getElementsByClassName("imageNames");
+            for(i=0;i<x.length;i++)
+                x[i].style.display="none";
+            if(currentImage == x.length)
+                currentImage=0;
+            x[currentImage].style.display = "block";
+            ++currentImage;
+        }
+    </script>
+<body>
+</html>
